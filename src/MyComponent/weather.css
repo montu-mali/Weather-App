@@ -1,0 +1,192 @@
+ @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+ @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+
+ body {
+     margin: auto;
+     background-color: dodgerblue;
+     width: 100%;
+     height: 100%;
+     padding-left: 3px;
+     /* filter: blur(100px); */
+     /* background: url(https://www.agernic.com/uploads/css-background-image-size-fit-full-screen.jpg); */
+ }
+ 
+ .search_div {
+     text-align: center;
+     margin: 20px auto;
+ }
+ 
+ .search {
+     margin: auto;
+ }
+ 
+ input {
+     /* width: 250px; */
+     outline: none;
+     padding: 5px;
+     border: solid 1px green;
+     border-radius: 5px 0px 0px 5px;
+ }
+ 
+ button {
+     background-color: green;
+     color: white;
+     padding: 5px;
+     border: solid 1px green;
+     border-radius: 0px 5px 5px 0px;
+ }
+ 
+ .weather_div {
+    z-index: 1000;
+     padding: 10px 0px 0px 0px;
+     margin: auto;
+     width: fit-content;
+     height: 100%;
+     background-color: white;
+     border-radius: 10px;
+ }
+ 
+ .icon {
+     margin: auto;
+     text-align: center;
+     width: fit-content;
+     height: 100px;
+     padding-top: 20px;
+ }
+ 
+ .temp-date {
+     margin: 0 auto;
+     width: fit-content;
+     display: flex;
+     width: fit-content;
+     height: 80px;
+ }
+ 
+ .temp {
+    padding-left: 10px;
+     background-color: black;
+     width: 60%;
+     height: 80px;
+     color: white;
+     display: flex;
+     justify-content:space-around;
+     /* flex-wrap: wrap; */
+ }
+ 
+ .temperatur {
+    display: grid;
+     font-size: 25px;
+     place-content: center;
+ }
+ 
+ .description {
+     padding: 10px ;
+ }
+ 
+ .condition {
+     font-size: 22px;
+ }
+ 
+ .date {
+    display: grid;
+     place-content: center;
+     text-align: end;
+     background-color: rgb(11, 105, 105);
+     width: 40%;
+     height: 80px;
+     color: white;
+     padding: 10px 15px;
+     font-size: 17px;
+     font-weight: 800;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+ .footer_div {
+     padding: 7px 0px 0 0px;
+     height: 100%;
+ }
+ 
+ .footer {
+     text-align: center;
+     display: flex;
+     height: 100%;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     /* flex: auto auto auto auto; */
+ }
+ 
+ .comnfooter {
+     text-align: center;
+      display: grid;
+     font-size: 14px;
+     font-weight: 700;
+     margin: 5px 0px;
+     /* text-align: left; */
+ }
+ 
+ .footerIcon {
+     font-size: 23px;
+     margin: 5px 0px;
+     color: rgb(11, 105, 105);
+ }
+ 
+ .sunset {
+     width: 25%;
+     /* height: 50px; */
+ }
+ .animation{
+    position: relative;
+    float: right;
+    background-color:rgb(194, 191, 23) ;
+    width: 50%;
+    z-index: -1;
+    height: 200px;
+    /* margin-right: 200px; */
+    border-radius: 50% 0 0 50%;
+    margin-top: 40px;
+    background: blur;
+    filter: blur(120px);
+ }
+ .animation1{
+     position: absolute;
+    z-index: -1;
+    background-color:rgb(231, 7, 201) ;
+    width: 60%;
+    height: 300px;
+    border-radius: 0% 50% 50% 0%;
+    margin-top: 40px;
+    background: blur;
+    filter: blur(150px);
+    margin-right: 0px;
+ }
+
+
+ @media  (max-width:400px) {
+    .animation{
+        position: relative;
+        float: right;
+        background-color:rgb(207, 241, 13) ;
+        width: 100%;
+        height: 200px;
+        border-radius: 50% 0 0 50%;
+        margin-top: 40px;
+        background: blur;
+        /* z-index: 0; */
+        filter: blur(130px);
+     }
+     .animation1{
+        position: absolute;
+       z-index: -1;
+       background-color:rgb(231, 7, 201) ;
+       width: 70%;
+       height: 300px;
+       border-radius: 0% 50% 50% 0%;
+       margin-top: 40px;
+       background: blur;
+       filter: blur(150px);
+       margin-right: 0px;
+       margin-top: 0px;
+    }
+    
+ }
